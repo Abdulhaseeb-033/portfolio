@@ -1,192 +1,562 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A.H Portfolio</title>
+  <title>Abdul Haseeb Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="div1">
-    <div id="logo">
-      <img src="./images/logo.jpg.png" alt="" width="90px" height="90px">
-      <p>Abdul Haseeb</p>
-    </div>
-    <ul id="nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact" id="contact-btn">Contact</a></li>
-    </ul>
-  </div>
 
-  <section id="Home">
-    <div id="home-content">
-      <h1>I'm 
-        <span>Abdul Haseeb</span>
-      </h1>
-      <h3>
-        <em>SEO Expert</em> | <em>Modern Web Developer</em> | <em>Canva Designer</em>
-      </h3>
-      <p>
-        I'm passionate about creating <dfn>Digital experience</dfn> that connect idea's with design and performance.
-        <br>
-        I specialize in <strong>SEO Optimization</strong>, <strong>Modern Web Development</strong>,<br>
-        and <em>Canva Graphic Design</em> to help brands grow online.
-      </p>
-      <a href="#contact" id="home-btn">Hire Me!</a>
-    </div>
-
-    <div id="home-image">
-      <img src="images/profile.jpg.png" alt="Abdul Haseeb Profile">
-    </div>
-  </section>
-
-  <section id="about" class="section about-section">
-    <div id="about content">
-      <h2>About Me</h2>
-      <p>
-        My journey began with <em>curiosity</em> - how digital ideas come alive thtrough code and design.<br>
-        Today, I work with <strong>modern front end tools</strong>, <strong>SEO strategies</strong>, and <strong>creative Canva design</strong>
-        <br>
-        to build impactful visuals and optimized websites.
-      </p>
-      <p>
-        I focus on <dfn>simplicity</dfn>, <dfn>balance</dfn>, and <dfn>purpose</dfn> in every project I do.<br>
-        Each design and websites reflects <strong>professionalism</strong> and <em>orginality</em>.
-      </p>
-    </div>
-    <div id="about-image">
-      <img src="images/profile.jpg.png" alt="About Abdul Haseeb">
-    </div>
-  </section>
-
-  <section id="portfolio" class="section portfolio-section">
-    <h2>My Portfolio</h2>
-    <p>
-      Some of my recent work in <b>Canva Design</b>, <b>SEO</b>, and <b>Web Development</b>.<br>
-      I also design <i>Professional Logos</i> and <i>Business Cards</i> that build brand identity.
-    </p>
-
-    <div id="portfolio-gallery">
-
-      <div id="portfolio-item">
-        <img src="./images/canva-poster.jpg.png" alt="Canva Poster Design">
-        <strong>Canva Poster Design</strong>
+  <header id="header">
+    <div class="container nav-container">
+      <!-- logo -->
+      <div id="logo">
+          <span class="logo-main">AH</span>
+          <span class="logo-sub">AbdulHaseeb.dev</span>
       </div>
 
-      <div id="portfolio-item">
-        <img src="./images/youtube-thumbnail.jpg.png" alt="YouTube Thumbnail design">
-        <strong>YouTube Thumbnail Design</strong>
+      <div id="menu-toggle">
+        <i class="fa fa-bars"></i>
       </div>
 
-      <div id="portfolio-item">
-        <img src="./images/seo-webste.jpg" alt="SEO Website Optimization">
-        <strong>SEO Website Optimization</strong>
-      </div>
-
-      <div id="portfolio-item">
-        <img src="./images/landing-page.jpg" alt="Modern Landing Page">
-        <strong>Modern Landing Page</strong>
-      </div>
-
-      <div id="portfolio-item">
-        <img src="./images/logo-design.jpg.png" alt="Logo Design by Abdul Haseeb">
-        <stron>Logo Desaign</stron>
-      </div>
-
-      <div id="portfolio-item">
-        <img src="./images/business-card.jpg.png" alt="Business Card Design by Abdul Haseeb">
-        <strong>Business Card Design</strong>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="services" class="section services-section">
-    <h2>My Services</h2>
-    <div id="services-boxes">
-      <div id="service">
-        <h3>SEO Optimization</h3>
-        <p>
-          Improve your website visibility,<br>keyword ranking, and Google performance.
-        </p>
-      </div>
-      <div id="service">
-        <h3>Web Development</h3>
-        <p>
-          Build responsive, modern,<br> and optimized websites with clean code.
-        </p>
-      </div>
-      <div id="service">
-        <h3>Canva Graphic Design</h3>
-        <p>
-          Design modern posters,<br>social media content, and digital brand assets.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <h2>Contact Me</h2>
-    <p>
-      Let's build something <em>creative</em> together.
-    </p>
-    <form>
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="email" placeholder="Your Email" required><br>
-      <input type="tel" placeholder="Your Phone Number" required><br>
-      <input type="text" placeholder="subject" required><br>
-      <select required>
-        <option value="">Select Your Budget</option>
-        <option value="basic">Basic (Under $50)</option>
-        <option value="standard">Standard ($50 - $150)</option>
-        <option value="premium">premium ($150+)</option>
-      </select>
-      <br>
-      <textarea placeholder="Your Message" rows="5" required></textarea><br>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="footer-left">
-        <h3>Abdul Haseeb</h3>
-        <p>
-          building digital experiences with SEO, Web Development & Canva design.
-        </p>
-      </div>
-
-      <div class="footer-center">
-        <h4>Quick Links</h4>
-        <ul>
+      <nav id="navbar">
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+ 
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container home-container">
+      <h1>Hi, I'm <span class="name">Abdul Haseeb</span></h1>
+
+      <div class="home-points">
+        <div class="vertical-line"></div>
+        <div class="animated-text">
+          <span id="typing-text"></span>
+        </div>
       </div>
 
-      <div class="footer-right">
-        <h4>Contact Info</h4>
+      <h2>Aspiring Web Developer & Future Software Engineer</h2>
+
+      <p>I am a passionate and dedicated learner currently building my career in web development. I have a strong interest in creating modern, responsive, and user-friendly websites. I believe in continous learning and improving my skills every day to become a professional developer.</p>
+
+      <div class="home-image">
+        <img src="images/AbdulHaseeb (2).jpeg" alt="Abdul Haseeb">
+      </div>
+      
+      <div class="home-buttons">
+        <a href="#projects" class="btn">Explore Projects</a>
+        <a href="#contact" class="btn">Let's Collaborate</a>
+      </div>
+
+      <div class="home-social-links">
+        <a href="https://github.com/abdulhaseeb-033" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:abdulhaseebansari125@gmail.com" title="Email Me">
+          <i class="fas fa-envelope-open"></i>
+        </a>
+        <a href="tel:+923371360971" title="Call Me">
+          <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/03371360971" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-container">
+      <h2>About me</h2>
+      <span class="sub-heading">A Bit About Me</span>
+      <hr class="title-line">
+
+      <div class="about-text">
         <p>
-          <strong>Email:</strong> <a href="mailto:abdulhaseebansari125@gmail.com">abdulhaseeb@gmail.com</a>
+          My name is <strong>Abdul Haseeb</strong>, an 18-year old developer driven by the ambition to craft high-end digital experiences through <strong>modern tech stacks</strong>. 
+          Currently, I am deep-diving into <strong>Modern Web & Application Development</strong> at <strong>Saylani SMIT</strong> (Karachi, Pakistan) under the expert guidence of <strong>Sir Ibrahim Khan</strong>. 
+          With 70% of my course completed, I am now mastering <strong>React</strong> to elevate my frontend expertise.
+          Beyound the code, my foundation in <strong>Canva</strong> and <strong>SEO</strong> allows me to bridge the gap between aesthetic design and digital growth.
+          My ultimate vision is to envolve into a professional programmer, collaborate with global terms on real-world challenges, and enventually establish my own <strong>startup and software house</strong>. 
+          I am fully committed to giving my <strong>100% dedication</strong> to mastering this craft and delivering excellence in every project I touch. 
         </p>
+
         <p>
-          <strong>GitHub:</strong> <a href="https://github.com/Abdulhaseeb-033">github.com/AbdulHaseeb</a>
+          To me, being a <strong>Fullstack Developer</strong> is more than just a <strong>Profession</strong>; it is my <strong>Passion</strong> as a <strong>Developer</strong> that pushes me to innovate and explore new technical horizons every day. I focus on building seamless, end-to-end solutions that are not only functional but also visually cinametic, ensuring that every digital product tells a unique story.
+        </p>
+
+        <p class="highlight-text">
+          <strong>I don't just want to learn skills - I want to build a future with them.</strong>
+        </p>
+      </div>
+
+      <div class="education-card">
+        <div class="edu-header">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Education & Certifications</h3>
+        </div>
+
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <h4>Saylani Mass IT Training (SMIT)</h4>
+              <p><i class="fas fa-book-open"></i>
+                Full Stack Web & App Development
+              </p>
+              <span class="edu-status">
+                In Progress (70% Completed)
+              </span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <h4>Ziauddin Board of Education</h4>
+              <p><i class="fas fa-book-open"></i>
+                Intermediate in Computer Science
+              </p>
+              <span class="edu-date">
+                Session: 2024 - 2026
+              </span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <h4>Sir Raheel School System</h4>
+              <p><i class="fas fa-book-open"></i>
+                Matriculation (Science)
+              </p>
+              <span class="edu-date">
+                Session: 2022 - 2024
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-wrapper">
+        <div class="stats-intro">
+          <h3>My Progress at a Glance</h3>
+          <p>A quick look at my journey and the milestones I've acheived so far.</p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-box">
+            <h3>4+</h3>
+            <p>Projects Built</p>
+            <div class="dot"></div>
+          </div>
+          <div class="stat-box">
+            <h3>1+</h3>
+            <p>Year Learning</p>
+            <div class="dot"></div>
+          </div>
+          <div class="stat-box">
+            <h3>12+</h3>
+            <p>Tools Mastered</p>
+            <div class="dot"></div>
+          </div>
+          <div class="stat-box">
+            <h3>100%</h3>
+            <p>Dedication</p>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container skills-container">
+      <h2>My Skills</h2>
+      <span class="sub-heading"> What I Build With </span>
+      <hr class="title-line">
+
+      <div class="skills-intro">
+        <p>
+          I believe in continuous growth and keeping up with the latest industry standards.
+          My technical stack is a mix of core frontend technologies and modern tools that help me build scalable, responsive, and high-performance web applications.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 html-icon"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt css-icon"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js-square js-icon"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card learning">
+          <div class="badge">Learning</div>
+          <i class="fas fa-code ts-icon"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="skill-card learning">
+          <div class="badge">Learning</div>
+          <i class="fab fa-react react-icon"></i>
+          <span>React.Js</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-bootstrap bootstrap-icon"></i>
+          <span>Bootstrap</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-fire firebase-icon"></i>
+          <span>Firebase</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt git-icon"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-github github-icon"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-cloud-upload-alt deploy-icon"></i>
+          <span>Vercel/Netlify</span>
+        </div>
+        <div class="skill-card">
+          <div class="canva-c-icon">C</div>
+          <span>Canva</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-search seo-icon"></i>
+          <span>Seo</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt responsive-icon"></i>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container projects-container">
+      <h2>Featured Creations</h2>
+      <span class="sub-heading">My Creative Portfolio</span>
+      <hr class="title-line">
+
+      <div class="projects-intro">
+      <p>
+        A showcase of my technical journey-from complex web applications to creative brand identities.
+      </p>
+      </div>
+
+      <div class="projects-wrapper">
+        <div class="custom-project-card">
+          <div class="project-visual-area">
+            <div class="img">
+              <img src="images/aurum-scents-mockup.png.jpeg" alt="Aurum Scents Luxury Showcase" class="card-image-main">
+            </div>
+          </div>
+          <div class="project-details-box">
+            <span class="category-tag">E-commerce & Branding</span>
+            <h3>Aurum Scents</h3>
+            <p class="project-overview">A premium fragnance store focusing on elegance and seamless user experience. Currently integrating advanced authentication and inventory management features.</p>
+
+            <div class="tech-inventory">
+              <span class="inventory-title">Tecnology Used:</span>
+              <div class="skills-tag-group">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">WhatsApp API</span>
+                <span class="skill-tag">Firebase (Auth/DB)</span>
+              </div>
+            </div>
+
+            <div class="action-links-container">
+              <a href="https://abdulhaseeb-033.github.io/Aurum_Scents/" target="_blank" class="live-action-btn">
+                Live Preview <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-project-card">
+          <div class="project-visual-area">
+            <div class="img">
+              <img src="images/qoutesphere-final-mockup.png.jpeg" alt="QouteSphere Portal Showcase" class="card-image-main">
+            </div>
+          </div>
+          <div class="project-details-box">
+            <span class="category-tag">Web Application</span>
+            <h3>Firebase Integrated Portal</h3>
+            <p class="project-overview">A dynamic web platform featuring real-time data handling. Focused on mastering backend integration and user data persistance.</p>
+
+            <div class="tech-inventory">
+              <span class="inventory-title">Tecnology Used:</span>
+              <div class="skills-tag-group">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Firebase RTDB</span>
+                <span class="skill-tag">EmailJS</span>
+                <span class="skill-tag">Authentication</span>
+              </div>
+            </div>
+
+            <div class="action-links-container">
+              <a href="https://abdulhaseeb-033.github.io/firebase-website/" target="_blank" class="live-action-btn">
+                Live Preview <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-project-card">
+          <div class="project-visual-area">
+            <div class="img">
+              <img src="images/shopwave-mockup.png.jpeg" alt="ShopWave Shopping Showcase" class="card-image-main">
+            </div>
+          </div>
+          <div class="project-details-box">
+            <span class="category-tag">Front-end Development</span>
+            <h3>Modern Shopping Interface</h3>
+            <p class="project-overview">A fully responsive e-commerce landing page with a focus on modern UI trends and interactive product displays.</p>
+
+            <div class="tech-inventory">
+              <span class="inventory-title">Tecnology Used:</span>
+              <div class="skills-tag-group">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS Grid/Flexboox</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">UI/UX Strategy</span>
+              </div>
+            </div>
+
+            <div class="action-links-container">
+              <a href="https://abdulhaseeb-033.github.io/e-commerce-website/" target="_blank" class="live-action-btn">
+                Live Preview <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-status-box">
+        <div class="status-content">
+          <i class="fas fa-spinner fa-spin status-icon"></i>
+          <p>Evolution in Progress: New innovation projects are being developed and will be showcased soon.</p>
+        </div>
+        <div class="status-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container services-container">
+      <h2>Core Expertise</h2>
+      <span class="sub-heading">What I Offer</span>
+      <hr class="title-line">
+  
+      <div class="service-intro">
+        <p>
+          Providing high-quality digital solutions tailored to your business needs, from responsive web development to creative brand design.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Development</h3>
+          <p>Crafting high-performance, responsive websites with clean code using HTML, CSS, and modern frameworks
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-database"></i>
+          <h3>Full-Stack Solutions</h3>
+          <p>Developing dynamic web applications with seamless Firebase integration and real-time database managment.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-layer-group"></i>
+          <h3>UI/UX Optimization</h3>
+          <p>Design intuitive user interfaces with afocus on minimalist aesthetic, glassmorphism, and user journey.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-palette"></i>
+          <h3>Creative Branding</h3>
+          <p>Premium Canva designs for social media, YouTube thumbnails, and luxury brand identity concepts.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-rocket"></i>
+          <h3>SEO & Optimization</h3>
+          <p>Enhancing website visibility and search-engine rankings with basic on-page SEO strategies.
+          </p>
+        </div>
+      </div>
+
+      <div class="services-footer">
+        <p><i class="fas fa-lightbulb"></i>
+          I am always open to learning new things and improving my services to deliver better results.
         </p>
       </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <p>
-        &COPY; 2025 Abdul Haseeb | All Right Reserved
-      </p>
+  <section id="contact">
+    <div class="container contact-container">
+      <h2>Let's Collaborate</h2>
+      <span class="sub-heading">Start A Conversation</span>
+      <hr class="title-line">
+
+      <div class="contact-wrapper">
+
+        <div class="contact-info-column">
+          <h3 class="contact-subheading">Connect Instantly</h3>
+          <div class="contact-text">
+            <p>Have a vision in mind? <br> Whether it's a high-end web application or a createive dsign project, I'm here to bring your ideas to life.</p>
+          </div>
+
+          <div class="contact-links-list">
+            <a href="mailto:ahaseebans110@gmail.com" class="contact-link-card">
+              <div class="link-left">
+                <i class="fas fa-envelope-open-text"></i>
+                <span>AbdulHaseeb@gmail.com</span>
+              </div>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+
+            <a href="https://github.com/abdulhaseeb-033" target="_blank" class="contact-link-card">
+              <div class="link-left">
+                <i class="fab fa-github"></i>
+                <span>Check My Repositories</span>
+              </div>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+
+            <a href="https://wa.me/03371360971" target="_blank" class="contact-link-card">
+              <div class="link-left">
+                <i class="fab fa-whatsapp"></i>
+                <span>Fast Track Chat</span>
+              </div>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="availability-status">
+            <div class="status-item">
+              <i class="fas fa-globe-asia"></i>
+              <span>Remote Support from Karachi, PK</span>
+            </div>
+            <div class="status-item">
+              <i class="fas fa-history"></i>
+              <span>Swift Response (Within a few hours)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-column">
+          <h3 class="contact-subheading">Send A Proposal</h3>
+          <p class="form-description">
+            Fill out the form below with your project details, and I'll get back to you with a tailored solution and timeline.
+          </p>
+          <form action="" class="professional-form">
+            <div class="input-group">
+              <label for="full-name">Your Identity</label>
+              <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+              <label for="user-email">Response Channel</label>
+              <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+              <label for="project-type">Area of Interset</label>
+              <input type="text" id="project-type" placeholder="e.g. MERN Stack, UI Design, Branding">
+            </div>
+            <div class="input-group">
+              <label for="message-body">Project Brief</label>
+              <textarea rows="5" placeholder="Briefly describe your project..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              Dispatch Message 
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <div class="container footer-container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="footer-logo">Abdul Haseeb</h2>
+          <p class="footer-title">Software Engineer & MERN Stack Expert</p>
+          <p>
+            Architacting digital experiences with precision and minimalist aesthatics. Focused on high performance MERN solutions.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Quick Access</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Showcase</a></li>
+            <li><a href="#services">Solutions</a></li>
+            <li><a href="#contact">Hire Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <h3>Social Identity</h3>
+          <div class="social-icons">
+            <a href="https://github.com/abdulhaseeb-033" target="_blank" aria-label="Github">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr class="footer-line">
+        <p>
+          &copy; 2026 Abdul Haseeb. Crafted with <span class="heart-code">&hearts;</span> in Krachi, Pakistan.
+        </p>
+      </div>
+
     </div>
   </footer>
 
 </body>
+<script src="script.js"></script>
 </html>
